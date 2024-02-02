@@ -15,6 +15,7 @@
 
 .App-header {
   background-color: #282c34;
+  background-image: url("https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,17 +23,145 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.App-link {
-  color: #61dafb;
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.upload_button {
+  background-color: #61dafb;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.dialog {
+  /* display: none; */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialog_content {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px;
+  text-align: center;
+}
+
+/* The input is of type file */
+.fileUploadButton {
+  background-color: #61dafb;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.close_button {
+  background-color: #f44336;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  font-weight: bold;
+}
+.submit_button {
+  background-color: #4caf50;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  font-weight: bold;
+}
+.background {
+  background-image: url("https://images.pexels.com/photos/3766104/pexels-photo-3766104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card {
+  background-color: white;
+  color: #282c34;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px;
+  text-align: center;
+}
+
+.metrics {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.metric {
+  margin: 2px 20px;
+  padding: 2px 20px;
+  border-radius: 12px;
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  min-width: 10rem;
 }
